@@ -1,0 +1,80 @@
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color: #fff; /* White background */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle box shadow */
+}
+
+.menu li {
+  margin: 0;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #000; /* Black text */
+  padding: 15px;
+  display: block;
+  transition: background-color 0.3s ease; /* Add animation to background color */
+}
+
+.menu a:hover {
+  background-color: #f0f0f0; /* Change background color on hover */
+}
+
+.menu a.active {
+  font-weight: bold;
+}
+
+/* Optional: Add responsive styles */
+@media screen and (max-width: 600px) {
+  .menu {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .menu a {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+
+
+.header-container {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo-container {
+  flex: 1; /* Take up remaining space */
+}
+
+.logo {
+  max-height: 50px; /* Adjust the max height of your logo */
+}
+
+.login-container {
+  margin-left: 10px;
+}
+
+.login-button {
+  padding: 10px 15px;
+  background-color: #e91111; /* Green color, you can change it */
+  color: #fff; /* White text */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+

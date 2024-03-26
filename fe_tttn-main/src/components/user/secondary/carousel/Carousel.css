@@ -1,0 +1,147 @@
+/* checkout.css */
+
+.carousel-container {
+    width: 80%;
+    margin: auto;
+  }
+  
+  .image-container {
+    position: relative;
+  }
+  
+  .carousel-image {
+    width: 100%;
+    height: auto;
+  }
+  
+  .image-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  /* Add any additional styles as needed */
+  
+  /* Styles for the slick carousel */
+  .slick-slider {
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    user-select: none;
+    touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+  }
+  
+  .slick-list {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .slick-list:focus {
+    outline: none;
+  }
+  
+  .slick-list.dragging {
+    cursor: pointer;
+    cursor: hand;
+  }
+  
+  .slick-slider .slick-track,
+  .slick-slider .slick-list {
+    transform: translate3d(0, 0, 0);
+  }
+  
+  .slick-track {
+    position: relative;
+    left: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  .slick-track:before,
+  .slick-track:after {
+    display: table;
+    content: '';
+  }
+  
+  .slick-track:after {
+    clear: both;
+  }
+  
+  .slick-loading .slick-track {
+    visibility: hidden;
+  }
+  
+  .slick-slide {
+    display: none;
+    float: left;
+    height: 100%;
+    min-height: 1px;
+  }
+  
+  [dir='rtl'] .slick-slide {
+    float: right;
+  }
+  
+  .slick-slide img {
+    width: 100%;
+    display: block;
+  }
+  
+  .slick-slide.slick-loading img {
+    display: none;
+  }
+  
+  .slick-slide.dragging img {
+    pointer-events: none;
+  }
+  
+  .slick-initialized .slick-slide {
+    display: block;
+  }
+  
+  .slick-loading .slick-slide {
+    visibility: hidden;
+  }
+  
+  .slick-vertical .slick-slide {
+    display: block;
+    height: auto;
+    border: 1px solid transparent;
+  }
+  
+  /* Add any additional slick carousel styles as needed */
+  /* Hover effect on image */
+.image-container:hover .image-overlay {
+    opacity: 1;
+  }
+  
+  /* Navigation arrows */
+  .slick-prev,
+  .slick-next {
+    font-size: 24px;
+    color: white;
+    z-index: 1;
+  }
+  
+  .slick-prev {
+    left: 10px;
+  }
+  
+  .slick-next {
+    right: 10px;
+  }
+  
+  .slick-prev:hover,
+  .slick-next:hover {
+    color: #ffcc00; /* Màu khi hover */
+  }

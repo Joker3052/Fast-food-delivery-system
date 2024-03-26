@@ -1,0 +1,24 @@
+.image-list-store {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .image-list-store li {
+    width: 18%; /* Đảm bảo mỗi ảnh chiếm khoảng 18% chiều rộng */
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .image-list-store img {
+    width: 150px;
+    height: 150px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .image-list-store p {
+    margin-top: 10px;
+  }
