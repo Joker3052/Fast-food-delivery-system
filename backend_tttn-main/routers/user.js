@@ -316,7 +316,7 @@ router.post(`/put/startPass`, async (req, res) => {
     await otpDocument.save();
 
     // Gửi OTP qua email
-    const senderEmail = '6food2412@gmail.com';
+    const senderEmail = '.....................com';
     const transporter = nodemailer.createTransport({
       service: 'gmail',
       auth: {
@@ -590,12 +590,12 @@ router.post(`/startRegistration`, async (req, res) => {
     await otpDocument.save();
 
     // Gửi OTP qua email
-    const senderEmail = '6food2412@gmail.com';
+    const senderEmail = '.....................com';
     const transporter = nodemailer.createTransport({
       service: 'gmail',
       auth: {
         user: senderEmail,
-        pass: 'lnml waav jbgy vvkg',
+        pass: '',
       },
     });
 
