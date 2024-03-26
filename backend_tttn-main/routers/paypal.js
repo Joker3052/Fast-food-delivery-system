@@ -7,8 +7,8 @@ const { Order } = require('../models/order');
 // Cấu hình PayPal
 paypal.configure({
     'mode': 'sandbox', // sandbox or live
-    'client_id': 'AbJt-1D4Zer7X5p-EJHy9WQR8Dhdt94PBrj3n1q2v8ZMhSutDjuaClGqnW7XgO2Hnd0HRubjK90XuuJZ',
-    'client_secret': 'EMmS0_a45ezkRMiybz4EF4mjkE_tZ3JlsYz6ZM2fvvbsmWGan-EVaMOQHejcRgBkjfQZn4qmuYvX8lbD'
+    'client_id': '...............',
+    'client_secret': '..................'
 });
 
 // Tạo đơn hàng và chuyển hướng đến trang thanh toán PayPal
