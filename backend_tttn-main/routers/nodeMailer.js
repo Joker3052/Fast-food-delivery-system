@@ -17,14 +17,14 @@ router.post('/', (req, res) => {
   const otp = otpGenerator.generate(6, { upperCase: false, specialChars: false, alphabets: false });
 
   // Địa chỉ email gốc (địa chỉ sử dụng để đăng nhập vào ứng dụng)
-  const senderEmail = '6food2412@gmail.com';
+  const senderEmail = '.......@gmail.com';
 
   // Thiết lập thông tin tài khoản email để gửi OTP
   const transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
       user: senderEmail,
-      pass: 'osww wxqs dveb amob'
+      pass: ''
     }
   });
 
