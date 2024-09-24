@@ -1,6 +1,6 @@
 import axios from 'axios'
 const instance = axios.create({
-    baseURL: 'https://backend-tttn.vercel.app'  
+    baseURL: ''  
   });
   // Add a response interceptor
   instance.interceptors.response.use(function (response) {
